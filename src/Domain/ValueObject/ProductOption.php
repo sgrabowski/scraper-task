@@ -2,7 +2,7 @@
 
 namespace App\Domain\ValueObject;
 
-class ProductOption
+final class ProductOption
 {
     public function __construct(
         private readonly string $title,

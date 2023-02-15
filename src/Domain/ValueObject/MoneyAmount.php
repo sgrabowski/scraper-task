@@ -2,7 +2,7 @@
 
 namespace App\Domain\ValueObject;
 
-class MoneyAmount
+final class MoneyAmount
 {
     //what fraction of the full unit is the subunit
     private const SUBUNIT_FRACTION = 1/100;
