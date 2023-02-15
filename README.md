@@ -16,12 +16,13 @@ Each element in the JSON results array should contain ‘option title, ‘descri
 with the most expensive package first.
 
 ### Installation (docker)
-`
-make build
-`
+- `make build`
 
 ### Running
-`
-make up
-make bash
-`
+- `make up`
+- `make bash`
+- `./vendor/bin/phpunit tests`
+
+### Solution notes
+- it is not specified what the `discount` is. Is it a monetary value, is it a percentage of the price, does it refer to monthly vs annual payment periods? etc.
+- for sake of simplicity, no additional library was used for handling monetary values, on a real project it would be sensible to do so. e.g. https://github.com/moneyphp/money
