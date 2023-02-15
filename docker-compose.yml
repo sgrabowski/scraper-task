@@ -1,6 +1,16 @@
 version: '3'
 
 services:
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/app
+    environment:
+      - 'COMPOSER_ALLOW_SUPERUSER=1'
+    tty: true
+    stdin_open: true
 ###> doctrine/doctrine-bundle ###
   database:
     image: postgres:${POSTGRES_VERSION:-15}-alpine
