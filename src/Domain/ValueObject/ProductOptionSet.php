@@ -21,6 +21,9 @@ final class ProductOptionSet
         $this->productOptions[] = $productOption;
     }
 
+    /**
+     * @return array<ProductOption>
+     */
     public function all(): array
     {
         return $this->productOptions;

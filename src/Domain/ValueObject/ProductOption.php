@@ -13,27 +13,27 @@ final class ProductOption
     ) {
     }
 
-    public function getTitle(): string
+    public function title(): string
     {
         return $this->title;
     }
 
-    public function getDescription(): string
+    public function description(): string
     {
         return $this->description;
     }
 
-    public function getPrice(): MoneyAmount
+    public function price(): MoneyAmount
     {
         return $this->price;
     }
 
-    public function getDiscount(): MoneyAmount
+    public function discount(): MoneyAmount
     {
         return $this->discount;
     }
 
-    public function getPaymentPeriod(): PaymentPeriod
+    public function paymentPeriod(): PaymentPeriod
     {
         return $this->paymentPeriod;
     }

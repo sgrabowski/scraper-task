@@ -23,10 +23,10 @@ final class MostExpensiveAnnuallySorter implements ProductOptionSorter
 
     private function calculateAnnualPrice(ProductOption $productOption): int
     {
-        if ($productOption->getPaymentPeriod() === PaymentPeriod::Annual) {
-            return $productOption->getPrice()->amountInSubunit();
+        if ($productOption->paymentPeriod() === PaymentPeriod::Annual) {
+            return $productOption->price()->amountInSubunit();
         }
 
-        return $productOption->getPrice()->amountInSubunit() * 12;
+        return $productOption->price()->amountInSubunit() * 12;
     }
 }
