@@ -22,6 +22,7 @@ with the most expensive package first.
 - `make up`
 - `make bash`
 - `./vendor/bin/phpunit tests`
+- `bin/console app:list-options`
 
 ### Solution notes
 - it is not specified what the `discount` is. Is it a monetary value, is it a percentage of the price, does it refer to monthly vs annual payment periods? etc.
@@ -30,8 +31,10 @@ with the most expensive package first.
 - the solution is obviously over-engineered, as usually expected from technical tests
 - tests are minimalistic for brevity reasons, a lot more negative scenarios should be written in a real world scenario
 - data scraping from websites is based on guesses and assumptions, which can be simply wrong - it's never a reliable data source
+- the requirements don't specify the output to contain information about payment period (monthly / annual) so it was not included
+- the requirements don't specify that the price should be expressed annually, although that's something I'd suggest
 
 ### What is not covered
 - caching
 - persistence
-- exception handling
+- exception/error handling
