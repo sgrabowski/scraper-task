@@ -25,5 +25,13 @@ with the most expensive package first.
 
 ### Solution notes
 - it is not specified what the `discount` is. Is it a monetary value, is it a percentage of the price, does it refer to monthly vs annual payment periods? etc.
+- it is not specified what the `description` consists of
 - for sake of simplicity, no additional library was used for handling monetary values, on a real project it would be sensible to do so. e.g. https://github.com/moneyphp/money
 - the solution is obviously over-engineered, as usually expected from technical tests
+- tests are minimalistic for brevity reasons, a lot more negative scenarios should be written in a real world scenario
+- data scraping from websites is based on guesses and assumptions, which can be simply wrong - it's never a reliable data source
+
+### What is not covered
+- caching
+- persistence
+- exception handling

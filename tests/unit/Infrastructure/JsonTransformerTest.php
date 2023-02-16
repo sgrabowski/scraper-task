@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests\Infrastructure;
+namespace App\Tests\unit\Infrastructure;
 
 use App\Domain\ValueObject\MoneyAmount;
 use App\Domain\ValueObject\PaymentPeriod;

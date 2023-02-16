@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests\Application\Service;
+namespace App\Tests\unit\Application\Service;
 
 use App\Application\Service\MostExpensiveAnnuallySorter;
 use App\Domain\ValueObject\MoneyAmount;

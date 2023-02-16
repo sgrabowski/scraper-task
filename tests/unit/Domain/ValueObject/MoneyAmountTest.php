@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests\Domain\ValueObject;
+namespace App\Tests\unit\Domain\ValueObject;
 
 use App\Domain\ValueObject\MoneyAmount;
 use PHPUnit\Framework\TestCase;
