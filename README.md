@@ -26,3 +26,4 @@ with the most expensive package first.
 ### Solution notes
 - it is not specified what the `discount` is. Is it a monetary value, is it a percentage of the price, does it refer to monthly vs annual payment periods? etc.
 - for sake of simplicity, no additional library was used for handling monetary values, on a real project it would be sensible to do so. e.g. https://github.com/moneyphp/money
+- the solution is obviously over-engineered, as usually expected from technical tests

@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Domain\Service;
+namespace App\Application\Service;
 
+use App\Domain\Service\ProductOptionSorter;
 use App\Domain\ValueObject\PaymentPeriod;
 use App\Domain\ValueObject\ProductOption;
 use App\Domain\ValueObject\ProductOptionSet;

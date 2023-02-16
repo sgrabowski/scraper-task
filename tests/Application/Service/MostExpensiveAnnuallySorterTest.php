@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Tests\Domain\Service;
+namespace App\Tests\Application\Service;
 
-use App\Domain\Service\MostExpensiveAnnuallySorter;
+use App\Application\Service\MostExpensiveAnnuallySorter;
 use App\Domain\ValueObject\MoneyAmount;
 use App\Domain\ValueObject\PaymentPeriod;
 use App\Domain\ValueObject\ProductOption;
